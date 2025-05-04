@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Cinnamonroll Fan Survey</h1>
+    <p id="description">We'd love to learn more about how you discovered and feel about Cinnamoroll! This short survey will only take a minute.</p>
+  </header>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name</label>
+      <input id="name" type="name" text="name" placeholder="Ex. John Doe" required size="20">
+      <label id="email-label">Email</label>
+      <input id="email" type="email" text="email" placeholder="example@email.com" required>
+      <label id="number-label">Number</label>
+      <input id="number" type="number" text="number" min="3" max="100" placeholder="16">
+    </fieldset>
+    <fieldset>
+      <legend>How did you first discover Cinnamoroll?</legend>
+      <label for="discovered">Select One here:</label>
+      <select id="dropdown">
+        <option value="store">Through Sanrio website or store</option>
+        <option value="fam-friend">From a friend or family member</option>
+        <option value="social">On social media (e.g., Instagram, TikTok)</option>
+        <option value="merch">Through merchandise (e.g., plushies, stationery)</option>
+        <option selected value="show">In a show or animated content</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Have you heard of Cinnamoroll before today?</legend>
+      <input id="yes" type="radio" name="heard" value="yes" />
+      <label for="yes">Yes</label>
+      <input id="no" type="radio" name="heard" value="no" />
+      <label for="no">No</label>
+    </fieldset>
+    <fieldset>
+      <legend>Which of the following Cinnamoroll items do you own or like? (Check all that apply)
+      </legend>
+      <label for="plush-toy">Plush toys</label>
+      <input type="checkbox" id="plush-toy" name="plush-toy" value="plush-toy" />
+
+      <label for="stationery">Stationery (e.g., notebooks, pens)</label>
+      <input type="checkbox" id="stationery" name="stationery" value="stationery" />
+
+      <label for="accessories">Accessories (e.g., bags, phone charms)</label>
+      <input type="checkbox" id="accessories" name="accessories" value="accessories" />
+
+      <label for="apparel">Apparel (e.g., shirts, socks)</label>
+      <input checked type="checkbox" id="apparel" name="apparel" value="apparel" />
+
+      <label for="digital">Digital content (e.g., wallpapers, stickers)</label>
+      <input type="checkbox" id="digital" name="digital" value="digital" />
+      <label for="want">I don’t own any, but I want to!</label>
+      <input type="checkbox" id="want" name="want" value="want" />
+    </fieldset>
+    <fieldset>
+      <label for="comments">What do you love most about Cinnamoroll?</label>
+      <textarea cols="30" rows="10" name="comments" id="comments" placeholder="Write your thoughts here..."></textarea>
+    </fieldset>
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+</body>
+
+</html>
